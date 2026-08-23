@@ -1,0 +1,13 @@
+# ---------------------------------------------------------------------------
+# 업스트림(KinesisCorporation/Adv360-Pro-ZMK) 동기화 시 우리 키맵을 보존한다.
+#
+# merge=ours 드라이버는 아래 파일들이 양쪽에서 모두 바뀌어 충돌이 날 때
+# 언제나 이 브랜치(ours) 버전을 그대로 채택한다.
+# 최초 1회 로컬 설정 필요:  git config merge.ours.driver true
+# ---------------------------------------------------------------------------
+config/adv360.keymap        merge=ours
+config/keymap.json          merge=ours
+config/info.json            merge=ours
+config/macros.dtsi          merge=ours
+config/cust_behaviors.json  merge=ours
+config/cust_keycodes.json   merge=ours
